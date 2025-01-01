@@ -28,6 +28,14 @@ dependencies {
 	testImplementation("io.projectreactor:reactor-test")
 	testImplementation("org.jetbrains.kotlin:kotlin-test-junit5")
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
+
+	// Custom
+	implementation("io.projectreactor.netty:reactor-netty-http:1.2.1")
+	implementation("io.micrometer:micrometer-core:1.14.2")
+	implementation("org.springframework.boot:spring-boot-starter-actuator:3.4.1")
+
+	// Custom for Tests
+	testImplementation("org.wiremock:wiremock-standalone:3.10.0")
 }
 
 kotlin {
