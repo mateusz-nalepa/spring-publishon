@@ -14,7 +14,7 @@ import org.springframework.web.reactive.function.client.WebClient
 @SpringBootTest(
     webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
 )
-class PublishonApplicationTests(
+class TestAppTests(
     @LocalServerPort
     private val port: Int,
     @Autowired
@@ -55,6 +55,9 @@ class PublishonApplicationTests(
                 .uri("http://localhost:$port/data")
                 .retrieve()
                 .bodyToMono(AppResponse::class.java)
+                .doOnError {
+                    it.printStackTrace()
+                }
                 .block()
 
         // then

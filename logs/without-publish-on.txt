@@ -1,0 +1,10 @@
+reactor-http-nio-3 ### com.nalepa.publishon.AppEndpoint ###
+reactor-http-nio-3 ### com.nalepa.publishon.AppEndpoint ### ENDPOINT: Start processing request
+http-client-nio-2 ### io.netty.channel.DefaultChannelPipeline$HeadContext ### Writing data to socket
+http-client-nio-2 ### org.springframework.http.codec.json.Jackson2JsonDecoder ### Decoding webClient response
+http-client-nio-2 ### com.nalepa.publishon.AppEndpoint ### WEBCLIENT: I hava response from external service
+http-client-nio-2 ### com.nalepa.publishon.AppEndpoint ### CPU OPERATION: Started heavy operation
+http-client-nio-2 ### com.nalepa.publishon.AppEndpoint ### CPU OPERATION: Ended heavy operation
+http-client-nio-2 ### org.springframework.http.codec.json.Jackson2JsonEncoder ### Encoding endpoint response
+reactor-http-nio-3 ### io.netty.channel.DefaultChannelPipeline$HeadContext ### Writing data to socket
+http-client-nio-2 ### com.nalepa.publishon.AppEndpoint ### ENDPOINT: Ended processing request

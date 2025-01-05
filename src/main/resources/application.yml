@@ -1,8 +1,0 @@
-spring:
-  application:
-    name: publishon
-
-logging:
-  level:
-    org.springframework.http.server.reactive.ReactorHttpHandlerAdapter: TRACE
-
