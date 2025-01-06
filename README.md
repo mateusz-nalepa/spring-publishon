@@ -1,3 +1,6 @@
+# NOTE
+I've copy-pasted some class from the sources to add custom logs 
+
 1. Run `MockServerApp`
 2. Run `TestApp`
 3. Execute one of the curl commands and look for the `TestApp` logs
