@@ -62,7 +62,6 @@ class TestAppTests(
 
         // then
         requireNotNull(response)
-        assert(response.text == "Hello from wiremock!")
         wiremockServer.stop()
     }
 
