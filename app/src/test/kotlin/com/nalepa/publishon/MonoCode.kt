@@ -6,9 +6,8 @@ import reactor.core.scheduler.Schedulers
 
 class MonoCode {
 
-
     @Test
-    fun multipleSubscribeOn() {
+    fun consecutiveSubscribeOn() {
         Mono
             .just("value")
             .subscribeOn(Schedulers.parallel())
