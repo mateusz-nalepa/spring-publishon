@@ -28,6 +28,10 @@ class AppEndpoint(
 
     private val webClient: WebClient = createWebClient()
 
+    /**
+     * By default, there's a one pool for server & client
+     * I've created pool for the client in order to have custom thread names
+     */
     private fun createWebClient(): WebClient {
         val reactorResourceFactory =
             ReactorResourceFactory().apply {
