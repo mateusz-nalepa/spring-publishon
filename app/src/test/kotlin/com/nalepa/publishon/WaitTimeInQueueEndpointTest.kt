@@ -84,7 +84,7 @@ class WaitTimeInQueueEndpointTest(
     }
 
     @Test
-    fun noRequestWasPendingCauseHttpThreadsWereStillConnectionsButHttpThreadsWereBusy() {
+    fun noRequestWasPendingCauseHttpThreadsWereBusy() {
         // given
         val webClient = webClientBuilder.build()
         val somePool = Schedulers.boundedElastic()
