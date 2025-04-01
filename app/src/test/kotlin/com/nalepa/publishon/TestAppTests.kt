@@ -24,7 +24,7 @@ class TestAppTests(
     val wiremockServer =
         WireMockServer(
             options()
-                .port(8081)
+                .port(8085)
         )
 
 
