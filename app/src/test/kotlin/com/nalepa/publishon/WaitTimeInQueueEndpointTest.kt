@@ -48,6 +48,7 @@ class WaitTimeInQueueEndpointTest(
     }
 
     @Test
+    // sometimes flaky, I don't know why :D
     fun requestsArePendingCauseThereAreNoHeavyCpuOperationAfterGettingResponseFromWebClient() {
         // given
         val webClient = webClientBuilder.build()
