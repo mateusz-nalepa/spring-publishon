@@ -1,5 +1,6 @@
 # NOTE
-I've copy-pasted some class from the sources to add custom logs 
+I've copy-pasted some class from the sources to add custom logs.
+If there is something wrong with this approach, due to eq: some licenses, please let me know in form of an Issue.
 
 1. Run `MockServerApp`
 2. Run `TestApp`
